@@ -1,5 +1,6 @@
 
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Search, MapPin, School, Building } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { SearchResultType, searchEntities } from '@/utils/searchUtils';
@@ -10,6 +11,7 @@ interface SearchBarProps {
 }
 
 const SearchBar = ({ onSearch, className }: SearchBarProps) => {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [results, setResults] = useState<SearchResultType[]>([]);
   const [isActive, setIsActive] = useState(false);
@@ -56,6 +58,10 @@ const SearchBar = ({ onSearch, className }: SearchBarProps) => {
   const handleResultClick = (result: SearchResultType) => {
     setSearchQuery(result.name);
     setIsActive(false);
+    
+    // Navigate to search results page with the selected entity
+    navigate(`/search-results?id=${result.id}&type=${result.type}`);
+    
     if (onSearch) {
       onSearch(result.name);
     }

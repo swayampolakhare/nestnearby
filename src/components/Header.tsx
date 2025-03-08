@@ -29,7 +29,7 @@ const Header = () => {
           href="/" 
           className="text-2xl font-bold text-primary transition-all hover:opacity-80"
         >
-          RoomFinder
+          Nest Nearby
         </a>
 
         <nav className="hidden md:flex items-center space-x-8">

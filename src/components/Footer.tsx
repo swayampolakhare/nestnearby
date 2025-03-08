@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           <div>
             <a href="/" className="text-2xl font-bold text-primary mb-6 block transition-colors hover:opacity-90">
-              RoomFinder
+            Nest Nearby
             </a>
             <p className="text-gray-600 mb-6">
               Your one-stop solution for finding mess facilities, PG accommodations, laundry services, and transportation options near colleges and companies.
@@ -129,15 +129,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex">
                 <MapPin className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                <span className="text-gray-600">123 College Avenue, Bangalore, Karnataka 560001</span>
+                <span className="text-gray-600">BVCOEL Pune</span>
               </li>
               <li className="flex">
                 <Mail className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                <a href="mailto:info@roomfinder.com" className="text-gray-600 hover:text-primary transition-colors">info@roomfinder.com</a>
+                <a href="mailto:info@NestNearby.in" className="text-gray-600 hover:text-primary transition-colors">info@nestnearby.in</a>
               </li>
               <li className="flex">
                 <Phone className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                <a href="tel:+919876543210" className="text-gray-600 hover:text-primary transition-colors">+91 9876 543 210</a>
+                <a href="tel:+918625055880" className="text-gray-600 hover:text-primary transition-colors">+91 8625055880</a>
               </li>
             </ul>
             
@@ -165,7 +165,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-100 pt-8 text-center">
           <p className="text-gray-600 text-sm">
-            © {currentYear} RoomFinder. All rights reserved.
+            © {currentYear} Nest Nearby. All rights reserved.
           </p>
         </div>
       </div>

@@ -6,10 +6,12 @@ import { Button } from '@/components/ui/button';
 import SearchBar from '@/components/SearchBar';
 import { colleges, companies, SearchResultType } from '@/utils/searchUtils';
 
+type FacilityType = 'mess' | 'pg' | 'laundry' | 'transport';
+
 type Facility = {
   id: number;
   name: string;
-  type: 'mess' | 'pg' | 'laundry' | 'transport';
+  type: FacilityType;
   distance: string;
   rating: number;
   address: string;
@@ -47,7 +49,7 @@ const SearchResults = () => {
   const navigate = useNavigate();
   const [entity, setEntity] = useState<SearchResultType | null>(null);
   const [facilities, setFacilities] = useState<Facility[]>([]);
-  const [activeTab, setActiveTab] = useState<'mess' | 'pg' | 'laundry' | 'transport'>('pg');
+  const [activeTab, setActiveTab] = useState<FacilityType>('pg');
   
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
@@ -74,11 +76,9 @@ const SearchResults = () => {
     
   }, [location.search]);
   
-  const filteredFacilities = facilities.filter(facility => 
-    activeTab === 'all' || facility.type === activeTab
-  );
+  const filteredFacilities = facilities.filter(facility => facility.type === activeTab);
   
-  const getIconForType = (type: 'mess' | 'pg' | 'laundry' | 'transport') => {
+  const getIconForType = (type: FacilityType) => {
     switch (type) {
       case 'mess': return <Utensils className="w-5 h-5" />;
       case 'pg': return <Home className="w-5 h-5" />;
@@ -125,14 +125,14 @@ const SearchResults = () => {
           )}
           
           <div className="flex flex-wrap gap-2 mb-6">
-            {['pg', 'mess', 'laundry', 'transport'].map((tab) => (
+            {(['pg', 'mess', 'laundry', 'transport'] as FacilityType[]).map((tab) => (
               <Button
                 key={tab}
                 variant={activeTab === tab ? "default" : "outline"}
                 className="flex items-center gap-2"
-                onClick={() => setActiveTab(tab as any)}
+                onClick={() => setActiveTab(tab)}
               >
-                {getIconForType(tab as any)}
+                {getIconForType(tab)}
                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
               </Button>
             ))}

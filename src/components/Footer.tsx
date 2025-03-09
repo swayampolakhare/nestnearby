@@ -26,9 +26,13 @@ const Footer = () => {
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           <div>
-            <a href="/" className="text-2xl font-bold text-primary mb-6 block transition-colors hover:opacity-90">
-            Nest Nearby
-            </a>
+          <a href="#home" className="flex items-center">
+        <img
+        src="/logo1.png"
+        alt="Nest Nearby"
+        className="h-12 w-auto object-contain"
+        />
+      </a>
             <p className="text-gray-600 mb-6">
               Your one-stop solution for finding mess facilities, PG accommodations, laundry services, and transportation options near colleges and companies.
             </p>

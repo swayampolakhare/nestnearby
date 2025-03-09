@@ -45,6 +45,7 @@ const testimonials = [
     avatar: "/placeholder.svg",
     rating: 5
   }
+  
 ];
 
 const Reviews = () => {

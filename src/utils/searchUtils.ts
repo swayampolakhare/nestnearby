@@ -1,8 +1,8 @@
 
 // Database of colleges and companies for search functionality
 export const colleges = [
-  { id: 1, name: "Harvard University", location: "Cambridge, MA" },
-  { id: 2, name: "Stanford University", location: "Stanford, CA" },
+  { id: 1, name: "Bharati Vidyapeeth College of Engineering Lavale Pune", location: "Lavale Pune" },
+  { id: 2, name: "Vishwakarma Institute of Technology (VIT)", location: "Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037" },
   { id: 3, name: "Massachusetts Institute of Technology", location: "Cambridge, MA" },
   { id: 4, name: "California Institute of Technology", location: "Pasadena, CA" },
   { id: 5, name: "University of Chicago", location: "Chicago, IL" },

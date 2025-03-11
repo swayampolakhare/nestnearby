@@ -28,12 +28,12 @@ const sampleFacilities: Record<number, Facility[]> = {
 
   
   1: [
-    { id: 1, name: "Harvard Square Dining", type: "mess", distance: "0.3 km", rating: 4.5, address: "52 Dunster St, Cambridge, MA", price: "617-555-0156", description: "Affordable meal plans with vegetarian options", image: "https://source.unsplash.com/400x300/?restaurant" },
-    { id: 2, name: "Campus Cafe", type: "mess", distance: "0.5 km", rating: 4.3, address: "123 Harvard Ave, Cambridge, MA", price: "617-555-0166", description: "International cuisine with student discounts", image: "https://source.unsplash.com/400x300/?restaurant" },
+    { id: 1, name: "shree Mess", type: "mess", distance: "0.3 km", rating: 4.5, address: "Behind Bank of India ATM lavale pune", price: "₹2500", description: "Affordable meal plans with vegetarian options", image: "https://source.unsplash.com/400x300/?restaurant" },
+    { id: 2, name: "maruti mess", type: "mess", distance: "0.5 km", rating: 4.3, address: "Lavale phata pune", price: "3000", description: "veg and non-veg option", image: "https://source.unsplash.com/400x300/?restaurant" },
     { id: 3, name: "Raut Plaza", type: "pg", distance: "200M", rating: 4.5, address: "Infront of Bharati Vidyapeeth College of Engineering Lavale Pune", price: " ₹2000", description: "Semi-Furnished", image: "https://source.unsplash.com/400x300/?restaurant"},
     { id: 4, name: "Nutan Apartment", type: "pg", distance: "400M", rating: 4.7, address: "Behind Bank of India ATM lavale pune", price: " ₹2000", description: "Semi-Furnished", image: "https://source.unsplash.com/400x300/?restaurant" },
     { id: 5, name: "Down South AJ", type: "pg", distance: "10Km", rating: 4.9, address: "Near Symbiosis, Lavale Pune", price: " ₹5000", description: "Fully-Furnished with WiFi", image: "https://source.unsplash.com/400x300/?restaurant" },
-    { id: 6, name: "QuickWash Laundry", type: "laundry", distance: "0.7 km", rating: 4.2, address: "65 JFK St, Cambridge, MA", price: "617-555-0158", description: "24/7 self-service and drop-off options available" , image: "https://source.unsplash.com/400x300/?restaurant"},
+    { id: 6, name: "turbo Laundry", type: "laundry", distance: "0.7 km", rating: 4.2, address: "Lavale phata, Pune", price: "", description: "24/7 self-service and drop-off options available" , image: "https://source.unsplash.com/400x300/?restaurant"},
     { id: 7, name: "Cambridge Transit", type: "transport", distance: "0.2 km", rating: 4.4, address: "Harvard Square Station, Cambridge, MA", price: "617-555-0159", description: "Regular shuttle service to campus and city destinations" , image: "https://source.unsplash.com/400x300/?restaurant"},
   ],
   // VIT

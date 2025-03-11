@@ -19,8 +19,8 @@ export const colleges = [
 ];
 
 export const companies = [
-  { id: 1, name: "Google", location: "Mountain View, CA" },
-  { id: 2, name: "Apple", location: "Cupertino, CA" },
+  { id: 1, name: "Infosys", location: "Hinjwadi, Pune" },
+  { id: 2, name: "TCS", location: "IT park hinjwadi, Pune" },
   { id: 3, name: "Microsoft", location: "Redmond, WA" },
   { id: 4, name: "Amazon", location: "Seattle, WA" },
   { id: 5, name: "Facebook", location: "Menlo Park, CA" },
